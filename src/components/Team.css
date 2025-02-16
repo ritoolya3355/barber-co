@@ -1,0 +1,185 @@
+.team-section {
+  text-align: center;
+}
+
+.team-title {
+  font-size: 6rem;
+  margin-top: 0;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.team-card {
+  display: flex;
+  position: relative;
+  width: 23%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.team-card-image {
+  position: relative;
+  width: 100%;
+}
+
+.team-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.team-card:hover .team-card-image img {
+  filter: brightness(0.5); /* Затемнення картинки */
+}
+
+.team-card-button {
+  position: absolute;
+  box-sizing: border-box;
+  top: 60%;
+  height: 40%;
+  width: 100%;
+  background: #a3530ab2;
+  color: white;
+  font-size: 4.8rem;
+  padding-top: 15%;
+  cursor: pointer;
+  opacity: 0; /* Спочатку прихована */
+  transition: opacity 0.4s ease;
+}
+
+.team-card:hover .team-card-button {
+  opacity: 1; /* З'являється при наведенні */
+}
+
+/* Стилі для модального вікна */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content-team {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 4rem;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.modal-content-team h2 {
+  font-size: 2.5rem;
+  width: 35%;
+}
+
+.modal-content-team form {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-content-team label {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.modal-content-team input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 68%;
+  margin-left: 5%;
+}
+
+.btn-team {
+  background-color: #a3540a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-flex-self {
+  align-self: flex-end;
+}
+
+.btn-team:hover {
+  background-color: #ff6600;
+}
+
+.success-message {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    margin-top: 15%;
+  }
+
+  .team-title {
+    font-size: 4.5rem;
+  }
+
+  .team-card {
+    width: 45%;
+  }
+
+  .modal-content-team {
+    padding: 2rem;
+  }
+
+  .modal-content-team h2 {
+    font-size: 1.5rem;
+    text-align: start;
+    width: 25%;
+  }
+
+  .modal-conten-team form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title {
+    font-size: 2.5rem;
+  }
+
+  .modal-content-team {
+    padding: 1rem;
+  }
+
+  .modal-content-team h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content-team label {
+    font-size: 1rem;
+  }
+
+  .modal-content-team input {
+    padding: 0;
+  }
+
+  .btn-team {
+    font-size: 0.8rem;
+  }
+}

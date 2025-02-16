@@ -1,0 +1,59 @@
+.header {
+  position: fixed; /* Закріплюємо хедер */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 1000; /* Щоб він був поверх інших елементів */
+}
+
+.logo {
+  display: flex;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  justify-content: space-around;
+  margin-right: 2rem;
+}
+
+.nav__menu li a {
+  color: #ffffff;
+  font-size: 3.4rem;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .nav__menu {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav__menu li a {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem; 
+  }
+
+  .nav__menu li a {
+    font-size: 1.8rem;
+  }
+}

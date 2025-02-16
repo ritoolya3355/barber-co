@@ -1,0 +1,64 @@
+ .gallery-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 2% auto;
+  gap: 2rem;
+}
+
+.gallery-item {
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Стилі для контейнера з 4 фото */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  width: 50%;
+  height: auto;
+}
+
+/* Вирівнювання елементів по висоті */
+.gallery-item-left,
+.gallery-item-right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Анімація з'явлення */
+.gallery-item.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .gallery-item-left,
+  .gallery-item-right {
+    display: none;
+  }
+
+  .gallery-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-section{
+    padding-top: 17rem;
+  }
+}

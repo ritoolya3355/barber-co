@@ -1,0 +1,45 @@
+:root {
+  font-family: "Rosario", sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Стандартний стиль для секцій */
+.section {
+  max-width: 1900px;
+  margin: 0 auto;
+  min-height: 100vh; /* Висота секції не менше, ніж висота екрана */
+  display: flex; /* Центруємо контент */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: padding-top 0.5s ease; /* Плавна зміна відступу */
+}
+
+/* Стилі для зображень */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .section{
+    min-height: auto;
+    padding-top: 4rem;
+  }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Hair Styling",
+        "image": "/services/hair-styling.png",
+        "description": "Professional hair styling for any occasion. Professional hair styling for any occasion. Professional hair styling for any occasion."
+    },
+    {
+        "id": 2,
+        "name": "Beard Trimming",
+        "image": "/services/beard-trimming.png",
+        "description": "Perfect beard trimming for a sharp look. Perfect beard trimming for a sharp look. Perfect beard trimming for a sharp look."
+    },
+    {
+        "id": 3,
+        "name": "Smooth Shave",
+        "image": "/services/smooth-shave.png",
+        "description": "A close and comfortable shave experience. A close and comfortable shave experience. A close and comfortable shave experience."
+    },
+    {
+        "id": 4,
+        "name": "Hair Straightening",
+        "image": "/services/hair-straightening.png",
+        "description": "Get sleek and smooth hair with our service. Get sleek and smooth hair with our service. Get sleek and smooth hair with our service."
+    }
+]

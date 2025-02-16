@@ -38,8 +38,7 @@ img {
 }
 
 @media (max-width: 480px) {
-  .section{
-    min-height: auto;
+  .section {
     padding-top: 4rem;
   }
 }
